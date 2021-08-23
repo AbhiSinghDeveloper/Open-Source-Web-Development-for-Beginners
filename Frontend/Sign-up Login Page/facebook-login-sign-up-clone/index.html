@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>facebook - log in or sign up</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="facebook, login, sign up, facebook login page clone">
+  <meta name="description" content="A clone of Facebook login and sign up page">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-md-7 mt-5">
+          <div id="titleDescCont" class="mt-5">
+            <h1 class="text-primary" id="facebook">facebook</h1>
+            <h2 class="desc">Facebook helps you connect and share with the people in your life.</h2>
+          </div>
+        </div>
+        <div class="col-md-5 mt-5">
+          <div id="formCard">
+            <form>
+              <div class="form-group">
+
+                <input type="text" class="form-control" id="emailOrPhone" placeholder="Email adddress or phone number">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="password" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <input type="submit" class="form-control btn btn-primary" id="login" value="Log in">
+              </div>
+              <p class="text-center">
+
+                <a href="#!" class="text primary">forgotten password?</a>
+              </p>
+              <hr>
+              <div class="text-center">
+
+                <button type="button" class="btn btn-success text-center" data-target="#newAccountModal"
+                  data-toggle="modal">Create New
+                  Account</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div id="pageFooter">
+
+    </div>
+  </footer>
+  <!-- MODAL -->
+  <div class="modal fade" id="newAccountModal" data-backdrop="static" data-keyboard="false" tabindex="-1"
+    aria-labelledby="newAccountModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+
+            <h5 class="modal-title" id="newAccountModalLabel">Sign Up</h5>
+            <small>It's quick and easy.</small>
+          </div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="row">
+              <div class="col-6">
+                <div class="form-group">
+                  <input type="text" name="firstName" id="firstName" class="form-control" placeholder="First name">
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-group">
+                  <input type="text" name="surname" id="surname" class="form-control" placeholder="Surname">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+
+              <input type="text" name="mobileOrEmail" id="mobileOrEmail" class="form-control"
+                placeholder="Mobile number or email address">
+            </div>
+            <div class="form-group">
+
+              <input type="password" name="password" id="newPassword" class="form-control" placeholder="New password">
+            </div>
+
+
+            <p>
+
+              <small>Date of birth <span class="rounded-circle bg-secondary text-light px-1">?</span></small>
+            </p>
+            <div class="row">
+              <div class="col-4">
+                <div class="form-group">
+                  <select name="day" id="day" class="custom-select">
+                    <option value="">Day</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="form-group">
+                  <select name="month" class="custom-select" id="month">
+                    <option value="">Month</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="form-group">
+                  <select name="year" class="custom-select" id="year">
+                    <option value="">Year</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <p>
+              <small>Gender <span class="rounded-circle bg-secondary text-light px-1">?</span></small>
+            </p>
+            <div class="row" id="gender">
+              <div class="col-4">
+                <div class="form-group border border-secondary rounded">
+                  <label for="female" class="pl-1 mt-1">Female</label> <input type="radio" name="female"
+                    class="ml-5 mt-1" id="female">
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="form-group border border-secondary rounded">
+                  <label for="male" class="pl-1 mt-1">Male</label> <input type="radio" name="male" class="ml-5 mt-1"
+                    id="male">
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="form-group border border-secondary rounded">
+                  <label for="custom" class="pl-1 mt-1">Custom</label> <input type="radio" name="custom"
+                    class="ml-5 mt-1" id="custom">
+                </div>
+              </div>
+            </div>
+
+            <div class="facebook-legal">
+              <p>
+                By clicking Sign Up, you agree to our
+                <a href="https://www.facebook.com/legal/terms/update" id="terms-link" target="_blank"
+                  rel="nofollow">Terms</a>
+                . Learn how we collect, use and share your data in our
+                <a href="https://www.facebook.com/about/privacy/update" id="privacy-link" target="_blank"
+                  rel="nofollow">Data Policy</a>
+                and how we use cookies and similar technology in our
+                and how we use cookies and similar technology in our
+                <a href="https://www.facebook.com/policies/cookies/" id="cookie-use-link" target="_blank"
+                  rel="nofollow">Cookie Policy</a>
+                . You may receive SMS notifications from us and can opt out at any time.
+              </p>
+            </div>
+            <div class="row">
+              <div class="col-6 offset-3">
+                <div class="form-group">
+                  <input type="submit" class="form-control btn btn-success" value="Sign Up">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <script>
+    $(document).ready(function () {
+      var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+      var now = new Date();
+      var dayOption = `<option value="">Day</option>`;
+      var monthOption = `<option value="">Month</option>`;
+      var yearOption = `<option value="">Year</option>`;
+      for (var i = 1; i < 32; i++) {
+
+        dayOption += `<option value="${i}" ${i === now.getDate() ? "selected" : ''}>${i}<option>`;
+
+      }
+      $('#day').html(dayOption);
+
+      for (var i = 0; i < months.length; i++) {
+        monthOption += `<option value="${months[i]}" ${i === now.getMonth() ? "selected" : ''}>${months[i]}<option>`;
+      }
+      $('#month').html(monthOption);
+
+      for (var i = now.getFullYear(); i > now.getFullYear() - 117; i--) {
+        yearOption += `<option value="${i}" ${i === now.getFullYear() ? "selected" : ''}>${i}<option>`;
+      }
+      $('#year').html(yearOption);
+    });
+
+  </script>
+</body>
+
+</html>

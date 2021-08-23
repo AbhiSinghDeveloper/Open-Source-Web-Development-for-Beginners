@@ -1,0 +1,51 @@
+body {
+	font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+	background: #f0f2f5;
+}
+#facebook {
+	font-size: 4rem;
+}
+
+.desc {
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+#titleDescCont {
+	padding: 1.5rem;
+}
+
+#formCard {
+	background: #fff;
+	box-shadow: 1px 1px 2px 2px #f0f0f0;
+	padding: 1rem;
+}
+
+#login {
+	background: #166fe5;
+}
+.form-group input,
+.form-group select {
+	font-size: 15px;
+	line-height: 16px;
+}
+
+.form-group input {
+	background: #f5f6f7;
+}
+.form-group input[type='submit'] {
+	background: #28a745;
+	font-size: 18px;
+	border-radius: 6px;
+	font-weight: bold;
+}
+
+#gender .form-group {
+	height: 35px;
+	/* background: #ccd0d5; */
+}
+
+.facebook-legal {
+	font-size: 11px;
+	color: #777;
+}
