@@ -1,9 +1,607 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title></title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Static Restaurant Website</title>
+
+	<link rel="shortcut icon" href="images/feat1.png" type="image/x-icon">
+
+	<!-------------------SWIPER CSS----------------->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+	<!----------------------AOS CSS--------------------->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<!--------------------FONT ICON----------------->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+	<!----------------------STYLE CSS----------------------->
+	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+	<!----------------------------------NAVIGATION------------------------------------------>
+
+	<input title="menu" type="checkbox" name="checkbox" id="check">
+
+	<nav>
+
+		<div class="content-max">
+
+			<div class="logo">
+				<a href="index.html">Chokocake</a>
+			</div>
+
+			<ul class="navigation">
+				<li><a class="nav-link" href="#">Home</a></li>
+				<li><a class="nav-link" href="#">Menu</a></li>
+				<li><a class="nav-link" href="#">Categories</a></li>
+				<li><a class="nav-link" href="#">Blog</a></li>
+				<li><a class="nav-link" href="#">Contact</a></li>
+			</ul>
+
+			<label for="check">
+                <i class="fa-solid fa-bars menu-btn"></i>
+                <i class="fa-solid fa-xmark close-btn"></i>
+            </label>
+		</div>
+	</nav>
+
+
+
+
+
+
+
+	<!---------------------------------HERO BANNER--------------------------------->
+	<section class="hero">
+		<div class="content-max">
+			<div class="content">
+				<div class="text tracking-in-contract">
+					<h2 class="text1">So yummy it will mett your heart</h2>
+					<h1>CHOCOLATE CAKES AND CANDIES</h1>
+					<small>A place where food and coziness compliment each other. <br> Call(999) 123-4567</small>
+				</div>
+				<div class="btn-hero">
+					<a href="#" class="btn">FIND OUT MORE</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+	<!---------------------------------FEATURES---------------------------------------------->
+	<section class="feature">
+		<div class="content-max">
+			<div class="content">
+
+				<div class="cards">
+
+					<div class="card image" data-aos="fade-up" data-aos-delay="30">
+						<img src="images/feat1.png" alt="">
+					</div>
+
+					<div class="card item" data-aos="fade-up" data-aos-delay="50">
+						
+						<div class="text">
+							<div class="title">
+
+								<div class="icon">
+									<i class="fa-solid fa-medal"></i>
+								</div>
+
+								<h3>Certification</h3>
+
+							</div>
+							<p>Far far away, behind the word mountains.</p>
+						</div>
+					</div>
+
+					<div class="card item" data-aos="fade-up" data-aos-delay="70">
+						<div class="text">
+							<div class="title">
+								<div class="icon">
+									<i class="fa-sharp fa-solid fa-clock"></i>
+								</div>
+								<h3>24/7 Opened</h3>
+							</div>
+							<p>Far far away, behind the word mountains.</p>
+						</div>
+					</div>
+
+					<div class="card item" data-aos="fade-up" data-aos-delay="90">
+						<div class="text">
+							<div class="title">
+								<div class="icon">
+									<i class="fa-solid fa-tag"></i>
+								</div>
+								<h3>Fair Prices</h3>
+							</div>
+							<p>Far far away, behind the word mountains.</p>
+						</div>
+					</div>
+
+					<div class="card image"data-aos="fade-up" data-aos-delay="110" >
+						<img src="images/feat.png" alt="Feature Image">
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+	<!---------------------------------MENU SECTION--------------------------------------------->
+	<section class="menu">
+		<div class="content-max">
+			<div class="content">
+
+				<div class="title">
+					<h1>Our Food Menu</h1>
+					<p>Far far away, behind the word mountains.</p>
+				</div>
+
+				<div class="cards-menu" id="lightgallery">
+
+					<div class="items" data-aos="fade-up" data-aos-delay="30">
+						<div class="card cardImg">
+							<img src="images/m1.jpg" alt="">
+						</div>
+						<div class="card cardImg">
+							<img src="images/m3.jpg" alt="">
+						</div>
+					</div>
+
+					<div class="items" data-aos="fade-up" data-aos-delay="50">
+						<div class="card cardImg">
+							<img src="images/m2.jpg" alt="">
+						</div>
+						<div class="card cardImg">
+							<img src="images/m1.jpg" alt="">
+						</div>
+					</div>
+
+					<div class="items" data-aos="fade-up" data-aos-delay="70">
+						<div class="card cardImg">
+							<img src="images/m3.jpg" alt="">
+						</div>
+						<div class="card cardImg">
+							<img src="images/m2.jpg" alt="">
+						</div>
+					</div>
+
+					<div class="items slide mySwiper" data-aos="fade-up" data-aos-delay="90">
+
+						<div class="card swiper-wrapper">
+
+							<div class="images swiper-slide">
+								<img src="images/s1.jpg" alt="">
+							</div>
+
+							<div class="images swiper-slide">
+								<img src="images/s2.jpg" alt="">
+							</div>
+
+							<div class="images swiper-slide">
+								<img src="images/s3.jpg" alt="">
+							</div>
+
+							<div class="images swiper-slide">
+								<img src="images/s4.jpg" alt="">
+							</div>
+
+						</div>
+
+						<div class="text-card">
+							<h1>SPECIAL FOOD MENU</h1>
+							<p>The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.</p>
+							<div class="btn-card">
+								<a href="#" class="btn">VIEW ALL</a>
+							</div>
+						</div>
+
+						<div class="swiper-button-next btnSwipper"></div>
+						<div class="swiper-button-prev btnSwipper"></div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+	<!--------------------------------CHEF SECTION------------------------------------>
+	<section class="chef">
+		<div class="content-max">
+			<div class="content">
+
+				<div class="cards">
+
+					<div class="card cardText" data-aos="fade-up" data-aos-delay="30">
+						<div class="text">
+							<h2>So yummy it will mett your heart !</h2>
+						    <h1>WELCOME TO CHOKOCAKE !</h1>
+						    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+						</div>
+
+						<div class="image">
+							<img src="images/chef.png" alt="">
+						</div>
+					</div>
+
+					<div class="card chefImg" data-aos="fade-up" data-aos-delay="50">
+						<img src="images/chefs.jpg" alt="">
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+	<!---------------------------------DESSERT SECTION--------------------------------------------->
+	<section class="menu">
+		<div class="content-max">
+			<div class="content">
+
+				<div class="title">
+					<h1>Our Dessert Menu</h1>
+					<p>Far far away, behind the word mountains.</p>
+				</div>
+
+				<div class="cards-menu" id="lightgaller">
+
+					<div class="items slide mySwiper" data-aos="fade-up" data-aos-delay="30">
+
+						<div class="card swiper-wrapper">
+
+							<div class="images swiper-slide">
+								<img src="images/s7.jpg" alt="">
+							</div>
+
+							<div class="images swiper-slide">
+								<img src="images/s6.jpg" alt="">
+							</div>
+
+							<div class="images swiper-slide">
+								<img src="images/s5.jpg" alt="">
+							</div>
+
+							<div class="images swiper-slide">
+								<img src="images/s8.jpg" alt="">
+							</div>
+
+						</div>
+
+						<div class="text-card">
+							<h1>SPECIAL DESSERT MENU</h1>
+							<p>The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.</p>
+							<div class="btn-card">
+								<a href="#" class="btn">VIEW ALL</a>
+							</div>
+						</div>
+
+						<div class="swiper-button-next btnSwipper"></div>
+						<div class="swiper-button-prev btnSwipper"></div>
+
+					</div>
+
+					<div class="items" data-aos="fade-up" data-aos-delay="50">
+						<div class="card cardImg">
+							<img src="images/d1.jpg" alt="">
+						</div>
+						<div class="card cardImg">
+							<img src="images/d3.jpg" alt="">
+						</div>
+					</div>
+
+					<div class="items" data-aos="fade-up" data-aos-delay="70">
+						<div class="card cardImg">
+							<img src="images/d2.jpg" alt="">
+						</div>
+						<div class="card cardImg">
+							<img src="images/d1.jpg" alt="">
+						</div>
+					</div>
+
+					<div class="items" data-aos="fade-up" data-aos-delay="90">
+						<div class="card cardImg">
+							<img src="images/d3.jpg" alt="">
+						</div>
+						<div class="card cardImg">
+							<img src="images/d2.jpg" alt="">
+						</div>
+					</div>
+
+				</div>
+
+				<div class="contact" data-aos="fade-up" data-aos-delay="110">
+					<div class="cards">
+						<div class="card">
+							<a href="#">Contact</a>
+						</div>
+						<div class="card">
+							<a href="#">Opening Time</a>
+						</div>
+						<div class="card">
+							<a href="#">Reservation</a>
+						</div>
+						<div class="card">
+							<a class="btnSocial" href="#">Social Contact</a>
+
+							<ul class="medias">
+								<li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+								<li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<!------------------------------------TESTIMONIALS SECTION-------------------------->
+	<section class="feedback">
+		<div class="content-max">
+			<div class="content">
+				<div class="title">
+					<h1>What people says</h1>
+					<p>Far far away, behind the word mountains.</p>
+				</div>
+
+				<div class="items">
+
+					<div class="item bottom1" data-aos="fade-up" data-aos-delay="30">
+						<div class="image">
+							<img src="images/pic-1.png" alt="">
+						</div>
+						<div class="text">
+							<h3>GREAT AND FAST SERVICES</h3>
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe corrupti sed asperiores! Ipsa, consequatur illo!</p>
+						</div>
+					</div>
+
+					<div class="item bottom2" data-aos="fade-up" data-aos-delay="50">
+						<div class="image">
+							<img src="images/pic-2.png" alt="">
+						</div>
+						<div class="text">
+							<h3>GREAT AND FAST SERVICES</h3>
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe corrupti sed asperiores! Ipsa, consequatur illo!</p>
+						</div>
+					</div>
+
+					<div class="item bottom3" data-aos="fade-up" data-aos-delay="70">
+						<div class="image">
+							<img src="images/pic-3.png" alt="">
+						</div>
+						<div class="text">
+							<h3>GREAT AND FAST SERVICES</h3>
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe corrupti sed asperiores! Ipsa, consequatur illo!</p>
+						</div>
+					</div>
+
+					<div class="item bottom" data-aos="fade-up" data-aos-delay="30">
+						<div class="image">
+							<img src="images/pic-4.png" alt="">
+						</div>
+						<div class="text">
+							<h3>GREAT AND FAST SERVICES</h3>
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe corrupti sed asperiores! Ipsa, consequatur illo!</p>
+						</div>
+					</div>
+
+					<div class="item bottom" data-aos="fade-up" data-aos-delay="50">
+						<div class="image">
+							<img src="images/pic-1.png" alt="">
+						</div>
+						<div class="text">
+							<h3>GREAT AND FAST SERVICES</h3>
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe corrupti sed asperiores! Ipsa, consequatur illo!</p>
+						</div>
+					</div>
+
+					<div class="item bottom" data-aos="fade-up" data-aos-delay="70">
+						<div class="image">
+							<img src="images/pic-2.png" alt="">
+						</div>
+						<div class="text">
+							<h3>GREAT AND FAST SERVICES</h3>
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe corrupti sed asperiores! Ipsa, consequatur illo!</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<!---------------------------MAP SECTION-------------------------------->
+	<section class="map">
+		<div class="content">
+			<iframe title="myFrame" class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30153.788252261566!2d72.82321484621745!3d19.141690214227783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63aceef0c69%3A0x2aa80cf2287dfa3b!2sJogeshwari%20West%2C%20Mumbai%2C%20Maharashtra%20400047!5e0!3m2!1sen!2sin!4v1629452077891!5m2!1sen!2sin" allowfullscreen=""></iframe>
+		</div>
+	</section>
+
+
+
+
+	<!--------------------------------------FOOTER SECTION--------------------------------------->
+	<footer>
+		<div class="content-max">
+			<div class="content">
+
+				<div class="cards">
+
+					<div class="card" data-aos="fade-up" data-aos-delay="30">
+						<div class="title">
+							<h2>ABOUT US</h2>
+						</div>
+						<div class="text">
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p> <br>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+						</div>
+					</div>
+
+					<div class="card" data-aos="fade-up" data-aos-delay="50">
+						<div class="title">
+							<h2>RECENT POSTS</h2>
+						</div>
+						
+						<div class="text">
+							<details>
+								<summary><i class="fa-solid fa-caret-right"></i> The European languages</summary>
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. <a href="#">Read More</a></p>
+							</details>
+							<hr>
+
+							<details>
+								<summary><i class="fa-solid fa-caret-right"></i> A wonderful serenity</summary>
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. <a href="#">Read More</a></p>
+							</details>
+							<hr>
+
+							<details>
+								<summary><i class="fa-solid fa-caret-right"></i> One morning by Gregor</summary>
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. <a href="#">Read More</a></p>
+							</details>
+							<hr>
+
+							<details>
+								<summary><i class="fa-solid fa-caret-right"></i> The quick, brown fox jumps</summary>
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. <a href="#">Read More</a></p>
+							</details>
+							<hr>
+						</div>
+					</div>
+
+					<div class="card" data-aos="fade-up" data-aos-delay="70">
+						<div class="title">
+							<h2>OUR FLICKR</h2>
+						</div>
+						<div class="text images">
+							<div class="image">
+								<a href="#"><img src="images/p2.jpg" alt=""></a>
+							</div>
+
+							<div class="image">
+								<a href="#"><img src="images/p3.jpg" alt=""></a>
+							</div>
+
+							<div class="image">
+								<a href="#"><img src="images/p4.jpg" alt=""></a>
+							</div>
+
+							<div class="image">
+								<a href="#"><img src="images/p5.jpg" alt=""></a>
+							</div>
+
+							<div class="image">
+								<a href="#"><img src="images/p2.jpg" alt=""></a>
+							</div>
+
+							<div class="image">
+								<a href="#"><img src="images/p3.jpg" alt=""></a>
+							</div>
+
+							<div class="image">
+								<a href="#"><img src="images/p4.jpg" alt=""></a>
+							</div>
+
+							<div class="image">
+								<a href="#"><img src="images/p5.jpg" alt=""></a>
+							</div>
+
+							<div class="image">
+								<a href="#"><img src="images/p2.jpg" alt=""></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="card" data-aos="fade-up" data-aos-delay="90">
+						<div class="title">
+							<h2>TAG CLOUD</h2>
+						</div>
+						<div class="text">
+							<ul>
+								<li><a href="#">Far far</a></li>
+								<li><a href="#">Sed ut</a></li>
+								<li><a href="#">Far far</a></li>
+								<li><a href="#">Sed ut</a></li>
+								<li><a href="#">Far far</a></li>
+								<li><a href="#">Sed ut</a></li>
+								<li><a href="#">Far far</a></li>
+								<li><a href="#">Sed ut</a></li>
+								<li><a href="#">Far far</a></li>
+								<li><a href="#">Sed ut</a></li>
+								<li><a href="#">Far far</a></li>
+								<li><a href="#">Sed ut</a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</footer>
+
+
+
+
+	<!-----------------------------------------CREDIT SECTION------------------------------->
+	<section class="credit">
+		<div class="content-max">
+			<div class="content">
+				<p>Copyright &COPY; <span id="year"></span> - Developed by <a href="#">Angelo Dorange</a></p>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<!--------------------------------------JAVASCRIPT LINK AND LIBRARIES---------------------------------->
+
+
+	<!-------------------SWIPER JS------------------------->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+	<!----------------------AOS JS---------------------------->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+	<!------------------SCRIPT JS-------------------------->
+	<script src="script.js"></script>
 </body>
+
 </html>
