@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+	
+body {
+	oustline: none;
+	user-select: none;
+	position: relative;
+	box-sizing: border-box;
+	background: #F7FBFF;
+	margin-top:400px;
+	font-family: "Quicksand";
+}
+
+.search-form {
+	position: relative;
+	top: 38%;
+	left: 0;
+	right: 0;
+	width: 50%;
+	height: 80px;
+	margin: 0 auto;
+	border-radius: 35px;
+	border-radius: 50px;
+	background: #F7FBFF;
+	box-shadow: 14px 14px 12px rgba(113, 162, 223, 0.1) , 
+             -14px -14px 11px #ffffff;
+}
+
+.search-input {
+	position: absolute;
+	top: 30px;
+	left: 60px;
+	font-size: 15px;
+	background: #F7FBFF;
+	color: #5a6674;
+	width: 70%;
+	height: 20px;
+	font-family: "quicksand";
+	border: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: none;
+}
+
+.search-input::-webkit-search-cancel-button {
+	-webkit-appearance: noneappearance: none;
+}
+
+.search-button {
+	position: absolute;
+	top: 27px;
+	left: 25px;
+	height: 20px;
+	width: 20px;
+	padding: 0;
+	margin: 0;
+	border: none;
+	background: #F7FBFF;
+	outline: none !important;
+}
+
+.search-button svg {
+	width: 25px;
+	height: 25px;
+}
+
+.search-option {
+	position: absolute;
+	text-align: right;
+	top: 27px;
+	right: 25px;
+}
+
+.search-option div {
+	position: relative;
+	display: inline-block;
+	margin: 0 1px;
+}
+
+.search-option div input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.01;
+}
+
+.search-option div span {
+	position: absolute;
+	display: block;
+	text-align: center;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	opacity: 0;
+	background: #929AA3;
+	color: #fff;
+	font-size: 9px;
+	letter-spacing: 1px;
+	line-height: 1;
+	text-transform: uppercase;
+	padding: 3px 20px;
+	border-radius: 12px;
+	top: -18px;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+.search-option div span::after {
+	content: '';
+	position: absolute;
+	bottom: -3px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	border-top: 4px solid #929AA3;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+.search-option div:hover span {
+	opacity: 1;
+	top: -30px;
+}
+
+.search-option div label {
+	display: block;
+}
+
+.search-option div svg {
+}
+
+.search-option div:hover svg {
+	opacity: 1;
+}
+
+.search-option div input:checked + label span {
+	background: #2D7DFF;
+}
+
+.search-option div input:checked + label span::after {
+	border-top-color: #2D7DFF;
+}
+
+* {
+	cursor: default;
+	outline: none;
+	user-select: none;
+	font-family: 'Quicksand';
+}
+
+
+
+.md-select {
+	position: absolute;
+	top: 8%;
+	left: 7%;
+	display: block;
+}
+
+.md-select [type=button] {
+	border-radius: 35px;
+	background: #F7FBFF;
+	box-shadow: 7px 7px 8px rgba(113, 162, 223, 0.2),
+             -7px -7px 8px #ffffff;
+	border: none;
+	transition: all 0.2s;
+	color: #485469;
+	cursor: default;
+	display: block;
+	line-height: 40px;
+	padding: 2px 0 1px 14px;
+	position: relative;
+	text-align: left;
+	width: 120%;
+	z-index: 1;
+	outline: none;
+	overflow: hidden;
+}
+
+.md-select [type=button]:hover {
+	color: white;
+	box-shadow: 0px 0px #fff;
+	transition: all 0.2s;
+	background: #cf2d48;
+}
+
+.md-select [type=button]:after {
+	content: '\25be';
+	float: right;
+	font-size: 24pt;
+	color: #485469;
+	margin-left: -5px;
+	padding-right: 16px;
+}
+
+#GOOGLE {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 800px;
+	height: 530px;
+	border-radius: 24px;
+	background: #F7FBFF;
+	box-shadow: 13px 13px 10px rgba(113, 162, 223, 0.1),
+             -13px -13px 15px #ffffff;
+}
+
+button {
+	outline: none;
+}
+
+.negara {
+	position: absolute;
+	left: 5.5%;
+	bottom: 8%;
+	display: inline-block;
+	padding: 15px 30px;
+	background: transparent;
+	border: none;
+	transition: 0.3s;
+}
+
+.negara svg {
+	float: left;
+	padding-right: 5px;
+	margin: 0px -20px 0 -20px;
+	transition: 0.3s;
+	border-radius: 50%;
+}
+
+.negara:hover {
+	color: #FFA800;
+	transition: 0.3s;
+	box-shadow: 0px 0px;
+}
+
+.negara svg:hover {
+	fill: #FFA800;
+}
+
+.setting {
+	position: absolute;
+	right: 3.5%;
+	bottom: 8%;
+	display: inline-block;
+	padding: 15px 30px;
+	background: transparent;
+	border: none;
+}
+
+.setting svg {
+	fill: none;
+	stroke: black;
+}
+
+.setting svg:hover {
+	fill: #0f9d58;
+}
+
+.setting svg:active {
+	transform: scale(1.3);
+	transition: 0.2s;
+}
+
+.info {
+	position: absolute;
+	right: 8.5%;
+	bottom: 8%;
+	display: inline-block;
+	padding: 15px 30px;
+	transition: 0.2s;
+	background: transparent;
+	border: none;
+}
+
+.info svg:hover {
+	fill: #31aa52;
+}
+
+.info svg:active {
+	transform: scale(1.3);
+	transition: 0.2s;
+}
+
+#thrga {
+	position: absolute;
+	display: flex;
+	justify-content: space-evenly;
+	right: 6.8%;
+	top: 6.8%;
+}
+
+#thrga img {
+	margin-top: 5px;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	box-shadow: 9px 9px 10px rgba(113, 162, 223, 0.2),
+         -13px -13px 5px #ffffff;
+}
+
+#thrga .infoo {
+	border-radius: 50%;
+	border-radius: 50px;
+	background: #F7FBFF;
+	box-shadow: 7px 7px 10px rgba(113, 162, 223, 0.2),
+             -7px -7px 10px #ffffff, 
+            inset -5px -5px 10px #ffffff;
+	margin: 9px;
+	padding: 12px 15px;
+	border: none;
+}
+
+#thrga .infoo:hover {
+	background: #eb4132;
+	box-shadow: 0px 0px;
+}
+
+#thrga svg:hover {
+	fill: white;
+}
+
+#thrga svg:active {
+	transition: 0.3s;
+	transform: scale(1.3);
+}
+
+#empat {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	top: 41%;
+	left: 0;
+	right: 0;
+	width: 50%;
+	margin: 0 auto;
+}
+
+#empat .menu {
+	background: #F7FBFF;
+	box-shadow: 5px 5px 5px rgba(113, 162, 223, 0.2),
+             -12px -12px 16px #f9fcff, inset -5px -5px 10px #fcfcfc, 
+            inset 5px 5px 5px #FEFFFF;
+	padding: 12px 15px;
+	margin: 15px;
+	transition: 0.6s;
+	border-radius: 50%;
+}
+
+#empat .menu:hover {
+	background: #0066FF;
+	transition: 0.6s;
+	box-shadow: 5px 5px 15px #5B98FF,
+             -13px -13px 9px #fff,inset -5px -5px 20px #478FFF,
+            inset 5px 5px 5px #3076FF;
+}
+
+#empat svg {
+	width: 15px;
+	height: 15px;
+	transition: 0.6s;
+}
+
+#empat svg:hover {
+	fill: white;
+	transition: 0.6s;
+	stroke: white;
+}
+
+#empat svg:active {
+	transition: 0.2s;
+	transform: scale(1.3);
+}
+
+	
+	
